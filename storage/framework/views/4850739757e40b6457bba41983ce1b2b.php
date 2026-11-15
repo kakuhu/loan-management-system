@@ -92,7 +92,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold">Stock of item sold</label>
-                                <input type="number" step="0.01" name="stock_of_item_sold" class="form-control form-control-lg rounded-4">
+                                <input type="text" name="stock_of_item_sold" class="form-control form-control-lg rounded-4">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold">Average daily sales</label>

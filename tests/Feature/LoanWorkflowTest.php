@@ -15,6 +15,28 @@ class LoanWorkflowTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function test_loan_officer_can_submit_stock_of_item_sold_as_text(): void
+    {
+        $response = $this->withSession([
+            'staff_id' => 1,
+            'staff_role' => 'loan_officer',
+        ])->post(route('loan.officer.applications.store'), [
+            'name' => 'Jane Doe',
+            'email' => 'jane@example.com',
+            'nrc' => '123456/78/9',
+            'contacts' => '0977000000',
+            'stock_of_item_sold' => '10 bags of maize',
+            'loanamount' => '5000',
+            'loanduration' => '12',
+        ]);
+
+        $response->assertRedirect(route('loan.officer.dashboard'));
+        $this->assertSame(
+            '10 bags of maize',
+            Applicant::query()->where('email', 'jane@example.com')->value('stock_of_item_sold')
+        );
+    }
+
     public function test_admin_dashboard_lists_uploaded_documents(): void
     {
         Storage::fake('public');

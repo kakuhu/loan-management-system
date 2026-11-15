@@ -171,7 +171,7 @@ class LoanApplicationController extends Controller
             'cell_number' => ['nullable', 'string', 'max:255'],
             'business_type' => ['nullable', 'string', 'max:255'],
             'business_experience_years' => ['nullable', 'numeric', 'min:0'],
-            'stock_of_item_sold' => ['nullable', 'numeric', 'min:0'],
+            'stock_of_item_sold' => ['nullable', 'string', 'max:255'],
             'average_daily_sales' => ['nullable', 'numeric', 'min:0'],
             'business_address' => ['nullable', 'string', 'max:255'],
             'loanamount' => ['required', 'numeric', 'min:0'],
