@@ -19,12 +19,12 @@
                             <div class="d-flex flex-wrap gap-3">
                                 <label class="border rounded p-3 flex-fill">
                                     <input class="form-check-input me-2" type="radio" name="customerType" value="marketeers" required>
-                                    Marketeers
+                                    Business Loans
                                     <span class="d-block small text-muted ms-4">32% for 5 weeks</span>
                                 </label>
                                 <label class="border rounded p-3 flex-fill">
                                     <input class="form-check-input me-2" type="radio" name="customerType" value="civil">
-                                    Civil servants
+                                    Salary Backed Loans
                                     <span class="d-block small text-muted ms-4">Rates depend on the selected term</span>
                                 </label>
                             </div>
@@ -69,11 +69,11 @@
                                 <tr><th>Customer type</th><th>Term</th><th>Interest rate</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td>Marketeers</td><td>5 weeks</td><td>32%</td></tr>
-                                <tr><td>Civil servants</td><td>1 week</td><td>10%</td></tr>
-                                <tr><td>Civil servants</td><td>2 weeks</td><td>15%</td></tr>
-                                <tr><td>Civil servants</td><td>3 weeks</td><td>25%</td></tr>
-                                <tr><td>Civil servants</td><td>4 weeks (1 month)</td><td>30%</td></tr>
+                                <tr><td>Business Loans</td><td>5 weeks</td><td>32%</td></tr>
+                                <tr><td>Salary Backed Loans</td><td>1 week</td><td>10%</td></tr>
+                                <tr><td>Salary Backed Loans</td><td>2 weeks</td><td>15%</td></tr>
+                                <tr><td>Salary Backed Loans</td><td>3 weeks</td><td>25%</td></tr>
+                                <tr><td>Salary Backed Loans</td><td>4 weeks (1 month)</td><td>30%</td></tr>
                             </tbody>
                         </table>
                     </div>

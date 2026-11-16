@@ -457,7 +457,7 @@
                         <span class="brand-mark" aria-label="Quick Aid Loan Limited logo">
                             <img src="<?php echo e(asset('images/quick-aid-logo.jpeg')); ?>" alt="Quick Aid Loan Limited" />
                         </span>
-                        <span>Quick Aid Loan Limited</span>
+                        <span>Quick Aid Loans Limited</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                         <span class="navbar-toggler-icon"></span>
